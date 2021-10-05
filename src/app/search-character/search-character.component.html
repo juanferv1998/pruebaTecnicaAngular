@@ -1,0 +1,16 @@
+<form [formGroup]="formulario"  (submit)="onSubmit()" class="sc-form">
+  <label for="number">Ingrese el Id del personaje</label>
+  <input type="text" id="number" formControlName="number" name="number" />
+  <div class="end">
+    <button
+      type="button"
+      class="btn btn btn-primary form-control mt-3"
+      id="submit"
+      (click)="onSubmit()">
+        Consultar
+      </button>
+  </div>
+</form>
+<div>
+  <h2>{{dataCharacter.name}}</h2>
+</div>

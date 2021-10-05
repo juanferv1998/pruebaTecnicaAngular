@@ -1,0 +1,13 @@
+<form [formGroup]="formulario"  (submit)="onSubmit()" class="sc-form">
+  <label for="texto">Ingrese la cadena de texto a guaradar</label>
+  <input type="text" id="texto" formControlName="texto" name="texto" />
+  <div class="end">
+    <button
+      type="button"
+      class="btn btn btn-primary form-control mt-3"
+      id="submit"
+      (click)="onSubmit()">
+        Guardar
+      </button>
+  </div>
+</form>
